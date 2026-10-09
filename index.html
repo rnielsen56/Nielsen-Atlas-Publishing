@@ -13,7 +13,9 @@
     .topline{height:7px;background:linear-gradient(90deg,#6c5534,#c6a46b,#6c5534)}
     header{background:var(--paper);border-bottom:1px solid #e2d8c7}
     .nav{max-width:1100px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:19px 24px}
-    .brand{font-size:1.25rem;font-weight:bold;letter-spacing:.035em;text-decoration:none;color:var(--forest)}
+    .brand{display:inline-flex;align-items:center;text-decoration:none;flex-shrink:0}
+    .brand img{display:block;width:265px;max-width:100%;height:auto;mix-blend-mode:multiply}
+    @media(max-width:430px){.brand img{width:225px}}
     nav{display:flex;gap:22px;flex-wrap:wrap}nav a{text-decoration:none;font-family:Arial,sans-serif;font-size:.88rem;color:#4b463e}
     .hero{background:radial-gradient(ellipse at top,#fefaf0 0%,#eee4d0 100%);padding:95px 24px 85px;text-align:center;border-bottom:1px solid #dfd0b6}
     .eyebrow{font-family:Arial,sans-serif;text-transform:uppercase;letter-spacing:.25em;color:#876637;font-size:.75rem;font-weight:bold}
@@ -42,7 +44,7 @@
   <div class="topline"></div>
   <header>
     <div class="nav">
-      <a class="brand" href="/">Nielsen–Atlas Publishing</a>
+      <a class="brand" href="/" aria-label="Nielsen–Atlas Publishing — Home"><img src="nielsen-atlas-logo.png" alt="Nielsen–Atlas Publishing logo" width="317" height="105"></a>
       <nav aria-label="Main navigation">
         <a href="#books">Our Commentaries</a>
         <a href="#mission">Our Mission</a>
